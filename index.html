@@ -1,755 +1,919 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-  <title>Bharat Webstudio | Affordable GBP Websites</title>
-  <!-- Font Awesome 6 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- Google Font: Inter + Outfit for modern look -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    /* ===== GLOBAL RESET ===== */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bharat Webstudio — Websites for Local Indian Businesses | Starting ₹5,000</title>
+<meta name="description" content="Bharat Webstudio builds professional websites for local Indian businesses and connects them to your Google Business Profile. One-time pricing from ₹5,000, GitHub Pages hosting, 24h delivery." />
+<link rel="canonical" href="https://bharatwebstudio.com/" />
+<meta name="robots" content="index, follow" />
 
-    html {
-      scroll-behavior: smooth;
-    }
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Bharat Webstudio" />
+<meta property="og:title" content="Google Business Profile but no website? We fix it." />
+<meta property="og:description" content="Professional websites for local Indian businesses, connected to your Google Business Profile. One-time pricing from ₹5,000." />
+<meta property="og:url" content="https://bharatwebstudio.com/" />
+<meta property="og:image" content="https://bharatwebstudio.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Bharat Webstudio — Google Business Profile but no website? We fix it." />
+<meta name="twitter:description" content="One-time website packages for local Indian businesses, from ₹5,000." />
 
-    body {
-      font-family: 'Outfit', 'Inter', sans-serif;
-      background-color: #ffffff;
-      color: #0a1e2f;
-      line-height: 1.5;
-    }
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230B1220'/%3E%3Cpath d='M28 66 L28 34 L50 50 Z' fill='%23F4A93C'/%3E%3Cpath d='M50 50 L72 34 L72 66 Z' fill='%232F6FED'/%3E%3C/svg%3E" />
 
-    .container {
-      width: 100%;
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    /* ===== TYPOGRAPHY ===== */
-    h1, h2, h3, h4 {
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: { DEFAULT: '#0B1220', 800: '#121B2E', 700: '#1B2A45' },
+          paper: '#FAFAF8',
+          slate: { 450: '#7C8AA5' },
+          signal: { DEFAULT: '#2F6FED', 600: '#2557C6', 50: '#EAF1FF' },
+          marigold: { DEFAULT: '#F4A93C', 600: '#DE8F1E' },
+        },
+        fontFamily: {
+          display: ['"Space Grotesk"', 'sans-serif'],
+          body: ['Inter', 'sans-serif'],
+        },
+        boxShadow: {
+          card: '0 1px 2px rgba(11,18,32,0.04), 0 12px 32px -12px rgba(11,18,32,0.18)',
+        },
+      },
+    },
+  };
+</script>
 
-    /* ===== BUTTONS ===== */
-    .btn {
-      display: inline-block;
-      background: linear-gradient(145deg, #1a73e8, #0f5bb3);
-      color: white;
-      font-weight: 700;
-      padding: 14px 32px;
-      border-radius: 60px;
-      text-decoration: none;
-      border: none;
-      box-shadow: 0 10px 20px -6px rgba(26,115,232,0.3);
-      transition: all 0.2s ease;
-      font-size: 1rem;
-      border: 1px solid rgba(255,255,255,0.2);
-      cursor: pointer;
-    }
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Bharat Webstudio",
+  "url": "https://bharatwebstudio.com/",
+  "email": "bharatwebstudioproject@gmail.com",
+  "areaServed": "IN",
+  "description": "Website development and Google Business Profile web-presence services for local Indian businesses.",
+  "makesOffer": [
+    { "@type": "Offer", "name": "Normal website package", "price": "5000", "priceCurrency": "INR" },
+    { "@type": "Offer", "name": "Pro website package", "price": "10000", "priceCurrency": "INR" }
+  ]
+}
+</script>
 
-    .btn:hover {
-      background: linear-gradient(145deg, #0f5bb3, #0a478a);
-      transform: translateY(-2px);
-      box-shadow: 0 18px 30px -8px rgba(26,115,232,0.4);
-    }
+<style>
+  :root { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    :root { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+  }
+  body { font-family: 'Inter', sans-serif; background: #FAFAF8; color: #0B1220; }
+  h1, h2, h3, .font-display { font-family: 'Space Grotesk', sans-serif; }
 
-    .btn-outline {
-      background: transparent;
-      border: 2px solid #1a73e8;
-      color: #1a73e8;
-      box-shadow: none;
-    }
+  .route-dot {
+    stroke-dasharray: 6 8;
+    stroke-linecap: round;
+  }
+  .path-draw { stroke-dasharray: 1000; stroke-dashoffset: 1000; }
 
-    .btn-outline:hover {
-      background: #e8f0fe;
-      transform: translateY(-2px);
-    }
+  .skip-link { position: absolute; left: -9999px; top: 0; background: #0B1220; color: #fff; padding: 10px 16px; z-index: 100; border-radius: 0 0 8px 0; }
+  .skip-link:focus { left: 0; }
 
-    .btn-wa {
-      background: #25D366;
-      box-shadow: 0 10px 20px -6px rgba(37,211,102,0.3);
-    }
-    .btn-wa:hover {
-      background: #20b859;
-    }
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+    outline: 2px solid #2F6FED; outline-offset: 2px; border-radius: 4px;
+  }
 
-    /* ===== NAVIGATION (fully responsive) ===== */
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 0;
-      flex-wrap: wrap;
-      position: sticky;
-      top: 0;
-      background: rgba(255,255,255,0.92);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      z-index: 100;
-      border-bottom: 1px solid rgba(0,0,0,0.04);
-    }
+  .browser-frame { background: #fff; border-radius: 12px; box-shadow: 0 1px 2px rgba(11,18,32,0.06), 0 24px 48px -20px rgba(11,18,32,0.35); overflow: hidden; }
+  .browser-chrome { background: #EDEFF4; padding: 8px 12px; display: flex; align-items: center; gap: 6px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; }
 
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+  .fade-up { opacity: 0; transform: translateY(24px); }
 
-    .logo-icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(145deg, #1a73e8, #0d47a1);
-      width: 42px;
-      height: 42px;
-      border-radius: 12px;
-      color: white;
-      font-size: 1.6rem;
-      font-weight: 700;
-      box-shadow: 0 8px 16px -4px rgba(26,115,232,0.3);
-    }
+  ::selection { background: #F4A93C; color: #0B1220; }
 
-    .logo-text {
-      font-weight: 800;
-      font-size: 1.5rem;
-      letter-spacing: -0.02em;
-      background: linear-gradient(145deg, #0a2a44, #133e5e);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .logo-text span {
-      background: linear-gradient(145deg, #1a73e8, #0d47a1);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+  .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+  .faq-item.open .faq-answer { max-height: 400px; }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-icon { transition: transform 0.25s ease; }
 
-    .nav-links {
-      display: flex;
-      gap: 32px;
-      align-items: center;
-    }
+  .mobile-nav { transform: translateX(100%); transition: transform 0.3s ease; }
+  .mobile-nav.open { transform: translateX(0); }
 
-    .nav-links a {
-      text-decoration: none;
-      color: #1e3a5f;
-      font-weight: 600;
-      transition: color 0.2s;
-    }
-
-    .nav-links a:hover {
-      color: #1a73e8;
-    }
-
-    .hamburger {
-      display: none;
-      font-size: 1.8rem;
-      cursor: pointer;
-      color: #1a73e8;
-    }
-
-    /* ===== HERO SECTION ===== */
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      padding: 60px 0 40px;
-      align-items: center;
-    }
-
-    .hero-content h1 {
-      font-size: 3.2rem;
-      line-height: 1.1;
-      margin-bottom: 20px;
-    }
-    .hero-content h1 span {
-      background: linear-gradient(145deg, #1a73e8, #0d47a1);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .hero-badge {
-      background: #e8f0fe;
-      color: #1a73e8;
-      font-weight: 600;
-      padding: 8px 20px;
-      border-radius: 60px;
-      display: inline-block;
-      margin-bottom: 20px;
-      font-size: 0.9rem;
-    }
-
-    .hero-image {
-      background: radial-gradient(circle at 30% 30%, #f0f7ff, #e9f0fa);
-      border-radius: 40px;
-      padding: 40px;
-      text-align: center;
-    }
-    .hero-image i {
-      font-size: 5rem;
-      color: #1a73e8;
-    }
-
-    /* ===== PRICING CARDS (rupee pricing) ===== */
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      margin: 40px 0;
-    }
-
-    .pricing-card {
-      background: white;
-      border-radius: 36px;
-      padding: 36px 28px;
-      border: 1px solid #ecf3fa;
-      box-shadow: 0 20px 40px -12px rgba(0,0,0,0.02);
-      transition: all 0.25s;
-      position: relative;
-    }
-
-    .pricing-card:hover {
-      transform: translateY(-8px);
-      border-color: #b8d6fc;
-      box-shadow: 0 30px 50px -20px rgba(26,115,232,0.15);
-    }
-
-    .popular {
-      border: 2px solid #1a73e8;
-      background: #fafeff;
-    }
-
-    .popular-badge {
-      background: #1a73e8;
-      color: white;
-      font-weight: 700;
-      padding: 6px 20px;
-      border-radius: 60px;
-      font-size: 0.8rem;
-      position: absolute;
-      top: -16px;
-      left: 30px;
-    }
-
-    .price {
-      font-size: 3rem;
-      font-weight: 800;
-      color: #0a1e2f;
-      margin: 20px 0 10px;
-    }
-    .price span {
-      font-size: 1rem;
-      font-weight: 400;
-      color: #5f7d95;
-    }
-
-    .pricing-features {
-      list-style: none;
-      margin: 28px 0;
-    }
-    .pricing-features li {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 16px;
-    }
-    .pricing-features i {
-      color: #1a73e8;
-    }
-
-    /* ===== SERVICE CARDS ===== */
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-
-    /* ===== CONTACT / WHATSAPP FEATURE ===== */
-    .contact-section {
-      background: linear-gradient(145deg, #0a263a, #0e2d42);
-      color: white;
-      border-radius: 48px;
-      padding: 60px 40px;
-      margin: 60px 0;
-    }
-
-    .contact-flex {
-      display: flex;
-      gap: 40px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .contact-info {
-      flex: 1;
-    }
-
-    .contact-info h2 {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-    }
-
-    .contact-detail {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 20px;
-      background: rgba(255,255,255,0.08);
-      padding: 16px 24px;
-      border-radius: 60px;
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(255,255,255,0.1);
-    }
-
-    .contact-detail i {
-      font-size: 1.8rem;
-      width: 40px;
-      text-align: center;
-    }
-
-    .wa-number, .email-id {
-      font-size: 1.2rem;
-      font-weight: 600;
-      word-break: break-all;
-    }
-
-    /* ===== PERMANENT HOSTING NOTE (GitHub) ===== */
-    .hosting-note {
-      background: #e6f2fc;
-      border-radius: 40px;
-      padding: 32px;
-      margin: 40px 0;
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      flex-wrap: wrap;
-      border: 1px solid #c8e1ff;
-    }
-
-    .hosting-note i {
-      font-size: 2.5rem;
-      color: #1a73e8;
-    }
-
-    /* ===== FOOTER ===== */
-    .footer {
-      background: #f5faff;
-      padding: 60px 0 30px;
-      margin-top: 60px;
-      border-top: 1px solid #e0ecfc;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1.5fr;
-      gap: 40px;
-    }
-
-    .footer-links h5 {
-      font-size: 1.2rem;
-      margin-bottom: 24px;
-      color: #0a1e2f;
-    }
-
-    .footer-links ul {
-      list-style: none;
-    }
-
-    .footer-links li {
-      margin-bottom: 16px; 
-    }
-
-    .footer-links a {
-      text-decoration: none;
-      color: #2d4e68;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      transition: color 0.2s;
-    }
-
-
-
-    .footer-links a:hover {
-      color: #1a73e8;
-    }
-
-    .footer-links i {
-      width: 24px;
-      color: #1a73e8;
-    }
-
-    .copyright {
-      text-align: center;
-      padding-top: 40px;
-      color: #5a7788;
-      border-top: 1px solid #d4e2f0;
-      margin-top: 40px;
-    }
-
-    /* ===== FULLY RESPONSIVE ===== */
-    @media (max-width: 1024px) {
-      .hero { grid-template-columns: 1fr; }
-      .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
-    }
-
-    @media (max-width: 768px) {
-      .nav-links { display: none; }
-      .hamburger { display: block; }
-      .navbar { flex-wrap: wrap; }
-      .hero h1 { font-size: 2.5rem; }
-      .pricing-grid { grid-template-columns: 1fr; }
-      .footer-grid { grid-template-columns: 1fr; }
-      .contact-flex { flex-direction: column; }
-    }
-
-    /* mobile menu fallback - since pure css, we add simple active via js */
-    .nav-links.active {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      padding: 20px 0;
-      background: white;
-      border-radius: 24px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-    }
-
-    /* ===== WHATSAPP FLOATING BUTTON ===== */
-    .float-wa {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background: #25D366;
-      color: white;
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      text-align: center;
-      font-size: 2.2rem;
-      box-shadow: 0 10px 30px rgba(37,211,102,0.3);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      z-index: 99;
-      transition: all 0.2s;
-    }
-    .float-wa:hover {
-      background: #20b859;
-      transform: scale(1.1);
-    }
-
-    /* email contact card */
-    .email-block {
-      background: white;
-      border-radius: 24px;
-      padding: 24px;
-      color: #0a1e2f;
-    }
-
-    /* logo design enhancements */
-    .brand-container {
-      display: flex;
-      align-items: center;
-    }
-    .logo-icon i {
-      font-size: 1.4rem;
-      color: white;
-    }
-    footer .logo-icon {
-      width: 38px;
-      height: 38px;
-      font-size: 1.4rem;
-    }
-  </style>
+  .whatsapp-fab { animation: pulse-ring 2.4s ease-out infinite; }
+  @keyframes pulse-ring { 0% { box-shadow: 0 0 0 0 rgba(37,197,94,0.35); } 70% { box-shadow: 0 0 0 14px rgba(37,197,94,0); } 100% { box-shadow: 0 0 0 0 rgba(37,197,94,0); } }
+  @media (prefers-reduced-motion: reduce) { .whatsapp-fab { animation: none; } }
+</style>
 </head>
-<body>
+<body class="bg-paper text-ink antialiased">
+<a href="#main" class="skip-link">Skip to main content</a>
 
-<!-- ===== FLOATING WHATSAPP (visible all devices) ===== -->
-<a href="https://wa.me/917479521662?text=Hi!%20I%20need%20website%20for%20my%20Google%20Business%20Profile" class="float-wa" target="_blank">
-  <i class="fab fa-whatsapp"></i>
-</a>
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="fixed top-0 inset-x-0 z-50 transition-all duration-300" data-scrolled="false">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div id="header-inner" class="flex items-center justify-between h-[68px] transition-all duration-300">
+      <a href="#home" class="flex items-center gap-2.5 font-display font-semibold text-lg tracking-tight">
+        <span class="relative w-8 h-8 rounded-[9px] bg-ink flex items-center justify-center overflow-hidden">
+          <svg width="16" height="16" viewBox="0 0 100 100" aria-hidden="true"><path d="M28 66 L28 34 L50 50 Z" fill="#F4A93C"/><path d="M50 50 L72 34 L72 66 Z" fill="#2F6FED"/></svg>
+        </span>
+        <span>Bharat <span class="text-signal">Webstudio</span></span>
+      </a>
 
-<!-- ===== NAVIGATION ===== -->
-<div class="container">
-  <nav class="navbar">
-    <div class="logo">
-      <div class="logo-icon">
-        <i class="fas fa-bolt"></i>
-      </div>
-      <div class="logo-text">Bharat<span>Webstudio</span></div>
-    </div>
-    <div class="hamburger" id="hamburger-icon">
-      <i class="fas fa-bars"></i>
-    </div>
-    <div class="nav-links" id="navLinks">
-      <a href="#home">Home</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-      <a href="#contact" class="btn btn-sm" style="padding: 10px 24px;">Get Site</a>
-    </div>
-  </nav>
-</div>
+      <nav class="hidden lg:flex items-center gap-8 text-[15px] font-medium text-ink-700" aria-label="Primary">
+        <a href="#home" class="hover:text-signal transition-colors">Home</a>
+        <a href="#services" class="hover:text-signal transition-colors">Services</a>
+        <a href="#pricing" class="hover:text-signal transition-colors">Pricing</a>
+        <a href="#work" class="hover:text-signal transition-colors">Work</a>
+        <a href="#about" class="hover:text-signal transition-colors">About</a>
+        <a href="#faq" class="hover:text-signal transition-colors">FAQ</a>
+        <a href="#contact" class="hover:text-signal transition-colors">Contact</a>
+      </nav>
 
-<!-- ===== HERO / HOME ===== -->
-<div id="home" class="container">
-  <div class="hero">
-    <div class="hero-content">
-      <span class="hero-badge"><i class="fas fa-store"></i> 200+ local shops live</span>
-      <h1>Google Business Profile but <span>no website?</span> We fix it.</h1>
-      <p style="font-size: 1.2rem; color: #2b4b67; margin-bottom: 28px;">We create professional website + connect to your GBP. Starting at ₹5,000 one-time. No monthly fees.*</p>
-      <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-        <a href="#pricing" class="btn">View plans →</a>
-        <a href="https://wa.me/917479521662" class="btn btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp now</a>
+      <div class="hidden lg:flex items-center gap-3">
+        <a href="https://wa.me/917479521662?text=Hi!%20I%20want%20a%20professional%20website%20for%20my%20business.%20Please%20share%20the%20available%20packages." target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-[15px] font-medium px-4 py-2.5 rounded-full border border-ink/10 hover:border-ink/25 transition-colors">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.83 14.02c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.11.11-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.86-4.29-.14-.19-1.17-1.55-1.17-2.96 0-1.4.74-2.09 1-2.38.26-.28.57-.35.76-.35h.55c.18 0 .41-.03.64.49.24.55.81 1.9.88 2.04.07.15.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.75 1.24 1.62 2 1.11 1 2.05 1.31 2.34 1.46.29.15.46.13.63-.05.17-.19.72-.83.91-1.11.19-.29.38-.24.63-.15.26.1 1.61.76 1.89.9.28.14.46.21.53.33.07.12.07.68-.17 1.36Z"/></svg>
+          WhatsApp Us
+        </a>
+        <a href="#pricing" class="inline-flex items-center gap-2 text-[15px] font-semibold px-5 py-2.5 rounded-full bg-signal text-white hover:bg-signal-600 transition-colors shadow-card">
+          Get Your Website
+        </a>
       </div>
-      <div style="display: flex; gap: 28px; margin-top: 40px;">
-        <div><strong style="font-size: 1.8rem; color: #1a73e8;">₹5K</strong><span style="display: block; color: #4f6f8f;">Basic site</span></div>
-        <div><strong style="font-size: 1.8rem; color: #1a73e8;">₹10K</strong><span style="display: block; color: #4f6f8f;">Pro + SEO</span></div>
-        <div><strong style="font-size: 1.8rem; color: #1a73e8;">24h</strong><span style="display: block; color: #4f6f8f;">delivery</span></div>
-      </div>
-    </div>
-    <div class="hero-image">
-      <i class="fab fa-google" style="font-size: 4.5rem;"></i>
-      <i class="fas fa-plus" style="font-size: 2.5rem; margin: 0 10px; color: #1a73e8;"></i>
-      <i class="fas fa-globe" style="font-size: 4rem;"></i>
-      <p style="margin-top: 24px; font-weight: 700; background: white; padding: 12px 24px; border-radius: 60px; display: inline-block;">GBP + website = customers</p>
+
+      <button id="menu-toggle" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-full hover:bg-ink/5" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
     </div>
   </div>
-</div>
 
-<!-- ===== PERMANENT HOSTING NOTE - GITHUB ===== -->
-<div class="container">
-  <div class="hosting-note">
-    <i class="fab fa-github"></i>
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="mobile-nav fixed top-0 right-0 bottom-0 w-[82%] max-w-sm bg-ink text-white z-50 lg:hidden flex flex-col p-6" aria-hidden="true">
+    <div class="flex items-center justify-between mb-8">
+      <span class="font-display font-semibold text-lg">Menu</span>
+      <button id="menu-close" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-white/10" aria-label="Close menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+      </button>
+    </div>
+    <nav class="flex flex-col gap-1 text-lg font-medium" aria-label="Mobile">
+      <a href="#home" class="mobile-link py-3 border-b border-white/10">Home</a>
+      <a href="#services" class="mobile-link py-3 border-b border-white/10">Services</a>
+      <a href="#pricing" class="mobile-link py-3 border-b border-white/10">Pricing</a>
+      <a href="#work" class="mobile-link py-3 border-b border-white/10">Work</a>
+      <a href="#about" class="mobile-link py-3 border-b border-white/10">About</a>
+      <a href="#faq" class="mobile-link py-3 border-b border-white/10">FAQ</a>
+      <a href="#contact" class="mobile-link py-3 border-b border-white/10">Contact</a>
+    </nav>
+    <div class="mt-auto flex flex-col gap-3 pt-6">
+      <a href="https://wa.me/917479521662?text=Hi!%20I%20want%20a%20professional%20website%20for%20my%20business.%20Please%20share%20the%20available%20packages." target="_blank" rel="noopener" class="text-center py-3 rounded-full border border-white/25 font-medium">WhatsApp Us</a>
+      <a href="#pricing" class="mobile-link text-center py-3 rounded-full bg-marigold text-ink font-semibold">Get Your Website</a>
+    </div>
+  </div>
+  <div id="menu-overlay" class="fixed inset-0 bg-ink/50 z-40 opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden"></div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section id="home" class="relative pt-36 pb-20 sm:pt-44 sm:pb-28 px-5 sm:px-8 overflow-hidden">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
     <div>
-      <h3 style="font-size: 1.6rem; font-weight: 800; margin-bottom: 8px;">🚀 Permanently hosted on GitHub</h3>
-      <p style="font-size: 1.1rem; color: #0a3b5c;">Your website is static, super fast, and hosted free on GitHub. <strong>Zero maintenance cost, no monthly fees.</strong> One-time payment, lifetime live.</p>
-    </div>
-  </div>
-</div>
+      <div class="fade-up inline-flex items-center gap-2 text-[13px] font-medium text-ink-700 bg-white border border-ink/10 rounded-full px-3.5 py-1.5 mb-6 shadow-card">
+        <span class="w-1.5 h-1.5 rounded-full bg-marigold"></span>
+        200+ local shops taken online
+      </div>
+      <h1 class="fade-up font-display font-semibold text-[2.5rem] leading-[1.08] sm:text-5xl sm:leading-[1.08] lg:text-[3.4rem] lg:leading-[1.06] tracking-tight">
+        Google Business Profile but no website? <span class="text-signal">We fix it.</span>
+      </h1>
+      <p class="fade-up mt-6 text-lg text-ink-700/80 leading-relaxed max-w-lg" style="color:#3B475F">
+        We build a professional website for your business and connect it to your Google Business Profile — so customers who find you on Google actually trust you enough to call.
+      </p>
+      <p class="fade-up mt-3 text-[15px] font-medium text-signal">Starting at ₹5,000, one-time. No monthly hosting fees.</p>
 
-<!-- ===== PRICING SECTION (₹5,000 & ₹10,000 + maintenance) ===== -->
-<div id="pricing" style="background: #f9fcff; padding: 60px 0;">
-  <div class="container">
-    <div class="section-title" style="text-align: center; margin-bottom: 40px;">
-      <h2 style="font-size: 2.6rem; font-weight: 800;">Transparent pricing</h2>
-      <p style="font-size: 1.2rem; color: #3e5a6a;">One-time payment • GitHub hosting • No hidden charges</p>
-    </div>
-    <div class="pricing-grid">
-      
-      <!-- NORMAL PLAN - ₹5,000 -->
-      <div class="pricing-card">
-        <h3 style="font-size: 2rem;">Normal</h3>
-        <div class="price">₹5,000<span> / one-time</span></div>
-        <ul class="pricing-features">
-          <li><i class="fas fa-check-circle"></i> Google Business Profile setup/verify</li>
-          <li><i class="fas fa-check-circle"></i> 1-page professional website</li>
-          <li><i class="fas fa-check-circle"></i> Mobile optimized, fast</li>
-          <li><i class="fas fa-check-circle"></i> Connected to GBP (website link)</li>
-          <li><i class="fas fa-check-circle"></i> GitHub permanent hosting</li>
-          <li><i class="fas fa-check-circle"></i> 24h delivery</li>
-          <li><i class="fas fa-circle" style="color: #b0cded;"></i> No monthly fees</li>
-        </ul>
-        <a href="https://wa.me/917479521662?text=I%20want%20Normal%20website%20for%20₹5000%20-%20Google%20Business%20Setup" class="btn btn-pricing" style="width: 100%; text-align: center;" target="_blank">Choose Normal →</a>
-        <p style="margin-top: 16px; font-size: 0.9rem; color: #5a7e9a;"><i class="fas fa-shield"></i> Lifetime live, no recurring</p>
+      <div class="fade-up mt-8 flex flex-wrap items-center gap-4">
+        <a href="#pricing" class="inline-flex items-center gap-2 text-[15px] font-semibold px-6 py-3.5 rounded-full bg-ink text-white hover:bg-ink-700 transition-colors shadow-card">
+          Get Your Website
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="https://wa.me/917479521662?text=Hi!%20I%20need%20a%20website%20for%20my%20Google%20Business%20Profile." target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-[15px] font-semibold px-6 py-3.5 rounded-full border-2 border-ink/15 hover:border-ink/35 transition-colors">
+          Chat on WhatsApp
+        </a>
       </div>
 
-      <!-- PRO PLAN - ₹10,000 (POPULAR) -->
-      <div class="pricing-card popular">
-        <div class="popular-badge">⭐ MOST POPULAR</div>
-        <h3 style="font-size: 2rem;">Pro</h3>
-        <div class="price">₹10,000<span> / one-time</span></div>
-        <ul class="pricing-features">
-          <li><i class="fas fa-check-circle"></i> Everything in Normal</li>
-          <li><i class="fas fa-check-circle"></i> 5-page premium website</li>
-          <li><i class="fas fa-check-circle"></i> Local SEO optimization</li>
-          <li><i class="fas fa-check-circle"></i> 3 Google Posts on your GBP</li>
-          <li><i class="fas fa-check-circle"></i> Citation/business listing</li>
-          <li><i class="fas fa-check-circle"></i> Priority 12h delivery</li>
-          <li><i class="fas fa-check-circle"></i> 6 months minor edits free</li>
-        </ul>
-        <a href="https://wa.me/917479521662?text=I%20want%20PRO%20website%20for%20₹10000%20with%20SEO%20and%20Google%20Posts" class="btn btn-pricing" style="width: 100%; background: #1a73e8;" target="_blank">Get Pro →</a>
-      </div>
-
-      <!-- MAINTENANCE PLAN (according to changes) -->
-      <div class="pricing-card">
-        <h3 style="font-size: 2rem;">Maintenance</h3>
-        <div class="price">₹500<span> / change</span></div>
-        <span style="background: #e1edff; padding: 6px 16px; border-radius: 60px; font-size: 0.8rem; font-weight: 700;">or custom package</span>
-        <ul class="pricing-features">
-          <li><i class="fas fa-check-circle"></i> Content updates (text, images)</li>
-          <li><i class="fas fa-check-circle"></i> New pages or sections</li>
-          <li><i class="fas fa-check-circle"></i> GBP profile post updates</li>
-          <li><i class="fas fa-check-circle"></i> Pay per change / yearly plan available</li>
-          <li><i class="fas fa-check-circle"></i> No retainer, only when you need</li>
-        </ul>
-        <a href="https://wa.me/917479521662?text=Hi%20I%20need%20website%20changes%20-%20maintenance%20plan" class="btn-outline btn-pricing" style="width: 100%; text-align: center;" target="_blank">Request change</a>
-        <p style="margin-top: 16px; font-size: 0.85rem;"><i class="fas fa-clock"></i> ₹500 per minor edit; bulk discounts</p>
+      <div class="fade-up mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-ink-700/70" style="color:#5A6684">
+        <span>✓ 24h target delivery</span>
+        <span>✓ ₹0 hosting cost</span>
+        <span>✓ Mobile-first builds</span>
       </div>
     </div>
-    <p style="text-align: center; margin-top: 30px; background: white; padding: 16px; border-radius: 60px; font-weight: 500;"><i class="fas fa-github"></i> All websites permanently hosted on GitHub — no hosting fees, ever. ₹0 monthly.</p>
-  </div>
-</div>
 
-<!-- ===== SERVICES ===== -->
-<div id="services" style="padding: 60px 0;">
-  <div class="container">
-    <div class="section-title" style="text-align: center;">
-      <h2 style="font-size: 2.4rem;">What we do</h2>
-      <p style="font-size: 1.2rem;">Complete Google Business & web presence</p>
-    </div>
-    <div class="service-grid">
-      <div class="service-card" style="background: white; border-radius: 32px; padding: 32px; border: 1px solid #f0f5fa;">
-        <div style="background: #e8f0fe; width: 64px; height: 64px; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;"><i class="fas fa-google" style="font-size: 2rem; color: #1a73e8;"></i></div>
-        <h3 style="font-size: 1.8rem;">GBP setup</h3>
-        <p style="color: #3e5a6a;">Claim, verify, optimize your Google Business Profile. Add photos, attributes, posts.</p>
-      </div>
-      <div class="service-card" style="background: white; border-radius: 32px; padding: 32px; border: 1px solid #f0f5fa;">
-        <div style="background: #e8f0fe; width: 64px; height: 64px; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;"><i class="fas fa-code" style="font-size: 2rem; color: #1a73e8;"></i></div>
-        <h3 style="font-size: 1.8rem;">Website generate</h3>
-        <p style="color: #3e5a6a;">We build a professional, mobile-friendly website from your business details. Static, fast, GitHub hosted.</p>
-      </div>
-      <div class="service-card" style="background: white; border-radius: 32px; padding: 32px; border: 1px solid #f0f5fa;">
-        <div style="background: #e8f0fe; width: 64px; height: 64px; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;"><i class="fas fa-chart-line" style="font-size: 2rem; color: #1a73e8;"></i></div>
-        <h3 style="font-size: 1.8rem;">Local SEO</h3>
-        <p style="color: #3e5a6a;">Optimize for "near me" searches. Citation building and maps ranking.</p>
-      </div>
-    </div>
-  </div>
-</div>
+    <!-- Hero visual: GBP -> Website -> Customer route -->
+    <div class="fade-up relative" id="hero-visual">
+      <div class="relative mx-auto max-w-md">
+        <!-- GBP card -->
+        <div class="browser-frame p-4 mb-5 relative z-20">
+          <div class="flex items-start gap-3">
+            <div class="w-11 h-11 rounded-lg bg-signal-50 flex items-center justify-center flex-shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="text-[13px] font-semibold text-ink-700">Google Business Profile</p>
+              <p class="text-xs mt-0.5" style="color:#8A93A8">Listing found · No website link</p>
+              <div class="flex gap-0.5 mt-1.5" aria-hidden="true">
+                <span class="text-marigold text-xs">★★★★☆</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<!-- ===== CONTACT SECTION - WHATSAPP & GMAIL (updated email) ===== -->
-<div id="contact" class="container">
-  <div class="contact-section">
-    <div class="contact-flex">
-      <div class="contact-info">
-        <h2>📲 Get your website today</h2>
-        <p style="font-size: 1.2rem; margin-bottom: 32px; opacity: 0.9;">Click WhatsApp or email us. We reply within 1 hour.</p>
-        
-        <!-- WhatsApp contact feature -->
-        <div class="contact-detail">
-          <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+        <!-- connecting route -->
+        <svg class="absolute left-1/2 -translate-x-1/2 -z-10" width="4" height="140" style="top:70px" aria-hidden="true">
+          <line id="route-line-1" x1="2" y1="0" x2="2" y2="140" stroke="#2F6FED" stroke-width="2" class="route-dot" />
+        </svg>
+
+        <!-- Website mockup -->
+        <div class="browser-frame relative z-20 mb-5">
+          <div class="browser-chrome">
+            <span class="dot bg-[#F4A93C]"></span><span class="dot bg-[#2F6FED]"></span><span class="dot bg-[#0B1220]/20"></span>
+            <span class="ml-2 text-[11px] text-ink-700/50 truncate">yourbusiness.github.io</span>
+          </div>
+          <div class="p-4">
+            <div class="h-2.5 w-2/3 rounded bg-ink/10 mb-2"></div>
+            <div class="h-2 w-1/2 rounded bg-ink/5 mb-4"></div>
+            <div class="grid grid-cols-3 gap-2">
+              <div class="h-14 rounded-md bg-signal-50"></div>
+              <div class="h-14 rounded-md bg-[#FEF2E1]"></div>
+              <div class="h-14 rounded-md bg-ink/5"></div>
+            </div>
+            <div class="mt-4 h-8 w-28 rounded-full bg-[#25C55E]/15 flex items-center justify-center">
+              <span class="text-[11px] font-semibold text-[#128C4A]">WhatsApp Order</span>
+            </div>
+          </div>
+        </div>
+
+        <svg class="absolute left-1/2 -translate-x-1/2 -z-10" width="4" height="90" style="top:265px" aria-hidden="true">
+          <line x1="2" y1="0" x2="2" y2="90" stroke="#F4A93C" stroke-width="2" class="route-dot" />
+        </svg>
+
+        <!-- Customer -->
+        <div class="browser-frame p-4 flex items-center gap-3 relative z-20 max-w-[240px] mx-auto">
+          <div class="w-10 h-10 rounded-full bg-[#0B1220] flex items-center justify-center flex-shrink-0">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
           <div>
-            <span style="font-weight: 400; opacity: 0.9;">WhatsApp business</span>
-            <div class="wa-number"><a href="https://wa.me/917479521662" style="color: white; text-decoration: underline; text-underline-offset: 4px;">+91 7485989859</a> (click to chat)</div>
+            <p class="text-[13px] font-semibold">New customer</p>
+            <p class="text-xs" style="color:#8A93A8">Calls · Visits · Orders</p>
           </div>
         </div>
-
-        <!-- Gmail contact feature - updated email -->
-        <div class="contact-detail">
-          <i class="fas fa-envelope" style="color: #fbbc04;"></i>
-          <div>
-            <span style="font-weight: 400; opacity: 0.9;">Email (Gmail)</span>
-            <div class="email-id"><a href="mailto:bharatwebstudioproject@gmail.com" style="color: white; text-decoration: underline; word-break: break-all;">bharatwebstudioproject@gmail.com</a></div>
-          </div>
-        </div>
-
-        <div style="margin-top: 30px;">
-          <a href="https://wa.me/917479521662?text=Hi%20I%20need%20website%20for%20my%20Google%20Business%20Profile" class="btn btn-wa" style="margin-right: 16px;" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp now</a>
-          <a href="mailto:bharatwebstudioproject@gmail.com?subject=Website%20for%20GBP%20-%20Query&body=Hi,%20I%20need%20a%20website%20for%20my%20Google%20Business%20Profile." class="btn btn-outline" style="background: white; color: #0a1e2f; border: 2px solid white;">Email us</a>
-        </div>
-      </div>
-      <div style="flex: 1; background: rgba(255,255,255,0.05); border-radius: 36px; padding: 32px; backdrop-filter: blur(8px);">
-        <i class="fas fa-globe" style="font-size: 3rem; margin-bottom: 20px;"></i>
-        <h3 style="font-size: 1.8rem; margin-bottom: 16px;">Permanent hosting</h3>
-        <p style="opacity: 0.9;">GitHub static hosting = ₹0 maintenance. Your site stays live forever. No monthly bills.</p>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- ===== FOOTER with PRICING, COMPANY, CONTACT ===== -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="logo" style="margin-bottom: 20px;">
-          <div class="logo-icon">
-            <i class="fas fa-bolt"></i>
-          </div>
-          <span style="font-weight: 800; font-size: 1.5rem; margin-left: 8px;">Bharat Webstudio</span>
-        </div>
-        <p style="color: #2d4e68; margin-bottom: 24px;">We give every local shop a website connected to Google Business. One-time cost, GitHub hosted, no monthly fees.</p>
-        <div style="display: flex; gap: 16px;">
-          <a href="https://wa.me/917479521662" style="color: #1a73e8; font-size: 1.6rem;"><i class="fab fa-whatsapp"></i></a>
-          <a href="mailto:bharatwebstudioproject@gmail.com" style="color: #1a73e8; font-size: 1.6rem;"><i class="fas fa-envelope"></i></a>
-        </div>
+<!-- ============ TRUST STATS ============ -->
+<section class="border-y border-ink/8 bg-white px-5 sm:px-8 py-10">
+  <div class="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="stat text-center lg:text-left">
+      <p class="font-display font-semibold text-3xl sm:text-4xl">200+</p>
+      <p class="text-sm mt-1" style="color:#5A6684">Local shops live <span class="block text-xs opacity-70">(self-reported by Bharat Webstudio)</span></p>
+    </div>
+    <div class="stat text-center lg:text-left">
+      <p class="font-display font-semibold text-3xl sm:text-4xl">₹5K</p>
+      <p class="text-sm mt-1" style="color:#5A6684">Starting price, one-time</p>
+    </div>
+    <div class="stat text-center lg:text-left">
+      <p class="font-display font-semibold text-3xl sm:text-4xl">24h</p>
+      <p class="text-sm mt-1" style="color:#5A6684">Target delivery time</p>
+    </div>
+    <div class="stat text-center lg:text-left">
+      <p class="font-display font-semibold text-3xl sm:text-4xl">₹0</p>
+      <p class="text-sm mt-1" style="color:#5A6684">Hosting cost on GitHub Pages</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROBLEM ============ -->
+<section class="px-5 sm:px-8 py-20 sm:py-28">
+  <div class="max-w-5xl mx-auto text-center">
+    <p class="fade-up text-[13px] font-semibold tracking-wide uppercase text-signal mb-3">The problem</p>
+    <h2 class="fade-up font-display font-semibold text-3xl sm:text-4xl tracking-tight max-w-3xl mx-auto">Your customers are already searching for you.</h2>
+    <p class="fade-up mt-5 text-lg max-w-2xl mx-auto" style="color:#3B475F">But if all they find is a bare Google Business Profile, they don't get enough to trust you — no photos of your work, no full price list, no easy way to see what you actually offer.</p>
+  </div>
+
+  <div class="mt-14 max-w-5xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+    <div class="fade-up p-6 rounded-2xl bg-white border border-ink/8 shadow-card">
+      <div class="w-9 h-9 rounded-lg bg-[#FEECEC] flex items-center justify-center mb-4"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div>
+      <p class="font-semibold text-[15px]">No professional website</p>
+      <p class="text-sm mt-1.5" style="color:#5A6684">Just a listing, with nowhere to send a serious customer.</p>
+    </div>
+    <div class="fade-up p-6 rounded-2xl bg-white border border-ink/8 shadow-card">
+      <div class="w-9 h-9 rounded-lg bg-[#FEECEC] flex items-center justify-center mb-4"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div>
+      <p class="font-semibold text-[15px]">Services aren't clear</p>
+      <p class="text-sm mt-1.5" style="color:#5A6684">Customers can't easily see what you sell or how much it costs.</p>
+    </div>
+    <div class="fade-up p-6 rounded-2xl bg-white border border-ink/8 shadow-card">
+      <div class="w-9 h-9 rounded-lg bg-[#FEECEC] flex items-center justify-center mb-4"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div>
+      <p class="font-semibold text-[15px]">No place for photos</p>
+      <p class="text-sm mt-1.5" style="color:#5A6684">Your best work is scattered, not showcased anywhere.</p>
+    </div>
+    <div class="fade-up p-6 rounded-2xl bg-white border border-ink/8 shadow-card">
+      <div class="w-9 h-9 rounded-lg bg-[#FEECEC] flex items-center justify-center mb-4"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div>
+      <p class="font-semibold text-[15px]">Weaker first impression</p>
+      <p class="text-sm mt-1.5" style="color:#5A6684">No website reads as less established, even if the work is great.</p>
+    </div>
+    <div class="fade-up p-6 rounded-2xl bg-white border border-ink/8 shadow-card">
+      <div class="w-9 h-9 rounded-lg bg-[#FEECEC] flex items-center justify-center mb-4"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div>
+      <p class="font-semibold text-[15px]">Competitors look sharper</p>
+      <p class="text-sm mt-1.5" style="color:#5A6684">Nearby businesses with a proper site win the comparison.</p>
+    </div>
+    <div class="fade-up p-6 rounded-2xl bg-ink text-white border border-ink/8 shadow-card flex flex-col justify-center">
+      <p class="font-display font-semibold text-lg leading-snug">We build the missing piece.</p>
+      <p class="text-sm mt-1.5 text-white/70">One website, connected to the profile you already have.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="px-5 sm:px-8 py-20 sm:py-28 bg-white border-y border-ink/8">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-2xl">
+      <p class="fade-up text-[13px] font-semibold tracking-wide uppercase text-signal mb-3">What we do</p>
+      <h2 class="fade-up font-display font-semibold text-3xl sm:text-4xl tracking-tight">Complete Google Business &amp; web presence</h2>
+    </div>
+
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="fade-up p-6 rounded-2xl border border-ink/8 hover:border-signal/30 hover:shadow-card transition-all">
+        <div class="w-10 h-10 rounded-lg bg-signal-50 flex items-center justify-center mb-5"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h3 class="font-display font-semibold text-lg">GBP setup</h3>
+        <p class="text-sm mt-2" style="color:#5A6684">Claim, verify, and optimize your Google Business Profile — categories, photos, attributes, and posts.</p>
       </div>
-
-      <!-- SERVICE with exact pricing -->
-      <div class="footer-links">
-        <h5>📋 Pricing</h5>
-        <ul>
-          <li><a href="#pricing"><i class="fas fa-tag"></i> Normal – ₹5,000</a></li>
-          <li><a href="#pricing"><i class="fas fa-crown"></i> Pro – ₹10,000</a></li>
-          <li><a href="#pricing"><i class="fas fa-tools"></i> Maintenance – per change</a></li>
-          <li><a href="#contact"><i class="fas fa-github"></i> GitHub hosting (free)</a></li>
-        </ul>
+      <div class="fade-up p-6 rounded-2xl border border-ink/8 hover:border-signal/30 hover:shadow-card transition-all">
+        <div class="w-10 h-10 rounded-lg bg-signal-50 flex items-center justify-center mb-5"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><line x1="2" y1="9" x2="22" y2="9"/></svg></div>
+        <h3 class="font-display font-semibold text-lg">Professional website</h3>
+        <p class="text-sm mt-2" style="color:#5A6684">Responsive, fast, mobile-optimized — with your services, contact details, and a WhatsApp button.</p>
       </div>
-
-      <!-- COMPANY -->
-      <div class="footer-links">
-        <h5>🏢 Company</h5>
-        <ul>
-          <li><a href="#"><i class="fas fa-info-circle"></i> About us</a></li>
-          <li><a href="successstories.html"><i class="fas fa-star"></i> Success stories</a></li>
-          <li><a href="joinaspartner.html"><i class="fas fa-handshake"></i> Partner</a></li>
-          <li><a href="#"><i class="fas fa-blog"></i> Blog</a></li>
-        </ul>
+      <div class="fade-up p-6 rounded-2xl border border-ink/8 hover:border-signal/30 hover:shadow-card transition-all">
+        <div class="w-10 h-10 rounded-lg bg-signal-50 flex items-center justify-center mb-5"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <h3 class="font-display font-semibold text-lg">Local SEO</h3>
+        <p class="text-sm mt-2" style="color:#5A6684">On-page structure and local keyword targeting built for "near me" searches. No ranking guarantees.</p>
       </div>
-
-      <!-- CONTACT with updated email -->
-      <div class="footer-links">
-        <h5>📬 Connect</h5>
-        <ul>
-          <li><a href="mailto:bharatwebstudioproject@gmail.com"><i class="fas fa-envelope"></i> bharatwebstudioproject@gmail.com</a></li>
-          <li><a href="https://wa.me/917479521662"><i class="fab fa-whatsapp"></i> +91 7485989859</a></li>
-          <li><a href="https://wa.me/917479521662"><i class="fas fa-comment"></i> Live chat (WhatsApp)</a></li>
-          <li><a href="https://wa.me/917479521662"><i class="fas fa-calendar"></i> Free consultation</a></li>
-        </ul>
+      <div class="fade-up p-6 rounded-2xl border border-ink/8 hover:border-signal/30 hover:shadow-card transition-all">
+        <div class="w-10 h-10 rounded-lg bg-signal-50 flex items-center justify-center mb-5"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
+        <h3 class="font-display font-semibold text-lg">Maintenance</h3>
+        <p class="text-sm mt-2" style="color:#5A6684">Text and image changes, new sections, or GBP updates — pay only when you need something changed.</p>
       </div>
     </div>
-    <div class="copyright">
-      <p>© 2025 Bharat Webstudio. All rights reserved. Google Business Profile is a trademark of Google LLC. <br>Email: bharatwebstudioproject@gmail.com | WhatsApp: +91 7485989859 | GitHub hosted — ₹0 monthly maintenance</p>
-      <p style="margin-top: 10px;"><i class="fas fa-check-circle" style="color: #1a73e8;"></i> Permanent website with one-time payment. No recurring fees.</p>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="px-5 sm:px-8 py-20 sm:py-28">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-2xl">
+      <p class="fade-up text-[13px] font-semibold tracking-wide uppercase text-signal mb-3">How it works</p>
+      <h2 class="fade-up font-display font-semibold text-3xl sm:text-4xl tracking-tight">From WhatsApp message to live website</h2>
+    </div>
+
+    <div class="mt-14 relative grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="hidden lg:block absolute top-6 left-[12.5%] right-[12.5%] h-px" style="background: repeating-linear-gradient(90deg,#C7CEDD 0 8px,transparent 8px 16px)"></div>
+      <div class="fade-up relative">
+        <div class="w-12 h-12 rounded-full bg-ink text-white font-display font-semibold flex items-center justify-center mb-5 relative z-10">01</div>
+        <h3 class="font-semibold text-[15px]">Tell us about your business</h3>
+        <p class="text-sm mt-2" style="color:#5A6684">Send your business details through WhatsApp — services, photos, contact info.</p>
+      </div>
+      <div class="fade-up relative">
+        <div class="w-12 h-12 rounded-full bg-ink text-white font-display font-semibold flex items-center justify-center mb-5 relative z-10">02</div>
+        <h3 class="font-semibold text-[15px]">We build your website</h3>
+        <p class="text-sm mt-2" style="color:#5A6684">We design and develop the site around your business, not a generic template.</p>
+      </div>
+      <div class="fade-up relative">
+        <div class="w-12 h-12 rounded-full bg-ink text-white font-display font-semibold flex items-center justify-center mb-5 relative z-10">03</div>
+        <h3 class="font-semibold text-[15px]">Review and finalize</h3>
+        <p class="text-sm mt-2" style="color:#5A6684">You review the site and request reasonable changes before it goes live.</p>
+      </div>
+      <div class="fade-up relative">
+        <div class="w-12 h-12 rounded-full bg-marigold text-ink font-display font-semibold flex items-center justify-center mb-5 relative z-10">04</div>
+        <h3 class="font-semibold text-[15px]">Go live</h3>
+        <p class="text-sm mt-2" style="color:#5A6684">Your website is deployed and linked from your Google Business Profile.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section id="pricing" class="px-5 sm:px-8 py-20 sm:py-28 bg-ink text-white">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-2xl">
+      <p class="fade-up text-[13px] font-semibold tracking-wide uppercase text-marigold mb-3">Pricing</p>
+      <h2 class="fade-up font-display font-semibold text-3xl sm:text-4xl tracking-tight">Transparent, one-time pricing</h2>
+      <p class="fade-up mt-4 text-white/70">₹0 hosting cost while hosted on GitHub Pages. No recurring hosting fee for the included setup.</p>
+    </div>
+
+    <div class="mt-14 grid lg:grid-cols-3 gap-6 items-start">
+      <!-- Normal -->
+      <div class="fade-up rounded-2xl bg-ink-800 border border-white/10 p-7 flex flex-col h-full">
+        <h3 class="font-display font-semibold text-xl">Normal</h3>
+        <p class="mt-3"><span class="text-4xl font-display font-semibold">₹5,000</span> <span class="text-white/50 text-sm">one-time</span></p>
+        <ul class="mt-6 space-y-3 text-sm text-white/80 flex-1">
+          <li class="flex gap-2"><span class="text-marigold">✓</span>Google Business Profile setup/verify assistance</li>
+          <li class="flex gap-2"><span class="text-marigold">✓</span>1-page professional website</li>
+          <li class="flex gap-2"><span class="text-marigold">✓</span>Mobile optimized, fast loading</li>
+          <li class="flex gap-2"><span class="text-marigold">✓</span>Connected to Google Business Profile</li>
+          <li class="flex gap-2"><span class="text-marigold">✓</span>GitHub Pages hosting</li>
+          <li class="flex gap-2"><span class="text-marigold">✓</span>24h target delivery</li>
+          <li class="flex gap-2"><span class="text-marigold">✓</span>No recurring hosting fee</li>
+        </ul>
+        <a href="https://wa.me/917479521662?text=I%20want%20the%20Normal%20website%20package%20for%20%E2%82%B95%2C000." target="_blank" rel="noopener" class="mt-7 text-center py-3 rounded-full border border-white/25 font-semibold hover:bg-white/10 transition-colors">Choose Normal</a>
+      </div>
+
+      <!-- Pro -->
+      <div class="fade-up rounded-2xl bg-white text-ink p-7 flex flex-col h-full relative lg:-translate-y-4 shadow-2xl">
+        <span class="absolute -top-3 left-7 bg-marigold text-ink text-[11px] font-bold px-3 py-1 rounded-full tracking-wide">MOST POPULAR</span>
+        <h3 class="font-display font-semibold text-xl">Pro</h3>
+        <p class="mt-3"><span class="text-4xl font-display font-semibold">₹10,000</span> <span class="text-ink/50 text-sm">one-time</span></p>
+        <ul class="mt-6 space-y-3 text-sm flex-1" style="color:#3B475F">
+          <li class="flex gap-2"><span class="text-signal">✓</span>Everything in Normal</li>
+          <li class="flex gap-2"><span class="text-signal">✓</span>5-page premium website</li>
+          <li class="flex gap-2"><span class="text-signal">✓</span>Local SEO optimization</li>
+          <li class="flex gap-2"><span class="text-signal">✓</span>3 Google Business Profile posts</li>
+          <li class="flex gap-2"><span class="text-signal">✓</span>Citation/business listing support</li>
+          <li class="flex gap-2"><span class="text-signal">✓</span>Priority 12h target delivery</li>
+          <li class="flex gap-2"><span class="text-signal">✓</span>6 months minor edits included</li>
+        </ul>
+        <a href="https://wa.me/917479521662?text=I%20want%20the%20PRO%20website%20package%20for%20%E2%82%B910%2C000." target="_blank" rel="noopener" class="mt-7 text-center py-3 rounded-full bg-signal text-white font-semibold hover:bg-signal-600 transition-colors">Get Pro</a>
+      </div>
+
+      <!-- Maintenance -->
+      <div class="fade-up rounded-2xl bg-ink-800 border border-white/10 p-7 flex flex-col h-full">
+        <h3 class="font-display font-semibold text-xl">Maintenance</h3>
+        <p class="mt-3"><span class="text-4xl font-display font-semibold">₹500</span> <span class="text-white/50 text-sm">/ change</span></p>
+        <p class="text-xs text-white/50 -mt-4">or custom yearly package</p>
+        <ul class="mt-6 space-y-3 text-sm text-white/80 flex-1">
+          <li class="flex gap-2"><span class="text-marigold">✓</span>Content updates</li>
+          <li class="flex gap-2"><span class="text-marigold">✓</span>Image updates</li>
+          <li class="flex gap-2"><span class="text-marigold">✓</span>New sections or pages</li>
+          <li class="flex gap-2"><span class="text-marigold">✓</span>GBP post updates</li>
+          <li class="flex gap-2"><span class="text-marigold">✓</span>Pay per change</li>
+          <li class="flex gap-2"><span class="text-marigold">✓</span>Custom yearly packages available</li>
+        </ul>
+        <a href="https://wa.me/917479521662?text=Hi%2C%20I%20need%20website%20changes." target="_blank" rel="noopener" class="mt-7 text-center py-3 rounded-full border border-white/25 font-semibold hover:bg-white/10 transition-colors">Request a Change</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPARISON ============ -->
+<section class="px-5 sm:px-8 py-20 sm:py-28">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="fade-up font-display font-semibold text-3xl sm:text-4xl tracking-tight text-center">Which plan is right for you?</h2>
+
+    <!-- Desktop table -->
+    <div class="hidden sm:block mt-12 overflow-hidden rounded-2xl border border-ink/8">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="bg-white border-b border-ink/8">
+            <th class="text-left font-semibold p-4" style="color:#5A6684">Feature</th>
+            <th class="text-left font-semibold p-4">Normal</th>
+            <th class="text-left font-semibold p-4 text-signal">Pro</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white/60">
+          <tr class="border-b border-ink/6"><td class="p-4" style="color:#5A6684">Website</td><td class="p-4">1 page</td><td class="p-4 font-medium">5 pages</td></tr>
+          <tr class="border-b border-ink/6"><td class="p-4" style="color:#5A6684">Mobile responsive</td><td class="p-4">✓</td><td class="p-4">✓</td></tr>
+          <tr class="border-b border-ink/6"><td class="p-4" style="color:#5A6684">GBP connection</td><td class="p-4">✓</td><td class="p-4">✓</td></tr>
+          <tr class="border-b border-ink/6"><td class="p-4" style="color:#5A6684">Hosting</td><td class="p-4">GitHub Pages</td><td class="p-4">GitHub Pages</td></tr>
+          <tr class="border-b border-ink/6"><td class="p-4" style="color:#5A6684">Local SEO</td><td class="p-4">Basic structure</td><td class="p-4 font-medium">Included</td></tr>
+          <tr class="border-b border-ink/6"><td class="p-4" style="color:#5A6684">GBP posts</td><td class="p-4">—</td><td class="p-4 font-medium">3</td></tr>
+          <tr class="border-b border-ink/6"><td class="p-4" style="color:#5A6684">Citation support</td><td class="p-4">—</td><td class="p-4 font-medium">Included</td></tr>
+          <tr class="border-b border-ink/6"><td class="p-4" style="color:#5A6684">Minor edits</td><td class="p-4">—</td><td class="p-4 font-medium">6 months</td></tr>
+          <tr><td class="p-4" style="color:#5A6684">Delivery target</td><td class="p-4">24h</td><td class="p-4 font-medium">12h</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Mobile stacked -->
+    <div class="sm:hidden mt-10 space-y-4">
+      <div class="rounded-xl border border-ink/8 bg-white p-5">
+        <p class="font-display font-semibold mb-3">Normal</p>
+        <dl class="space-y-2 text-sm">
+          <div class="flex justify-between"><dt style="color:#5A6684">Website</dt><dd>1 page</dd></div>
+          <div class="flex justify-between"><dt style="color:#5A6684">Local SEO</dt><dd>Basic structure</dd></div>
+          <div class="flex justify-between"><dt style="color:#5A6684">GBP posts</dt><dd>—</dd></div>
+          <div class="flex justify-between"><dt style="color:#5A6684">Minor edits</dt><dd>—</dd></div>
+          <div class="flex justify-between"><dt style="color:#5A6684">Delivery</dt><dd>24h</dd></div>
+        </dl>
+      </div>
+      <div class="rounded-xl border-2 border-signal bg-white p-5">
+        <p class="font-display font-semibold mb-3 text-signal">Pro</p>
+        <dl class="space-y-2 text-sm">
+          <div class="flex justify-between"><dt style="color:#5A6684">Website</dt><dd>5 pages</dd></div>
+          <div class="flex justify-between"><dt style="color:#5A6684">Local SEO</dt><dd>Included</dd></div>
+          <div class="flex justify-between"><dt style="color:#5A6684">GBP posts</dt><dd>3</dd></div>
+          <div class="flex justify-between"><dt style="color:#5A6684">Minor edits</dt><dd>6 months</dd></div>
+          <div class="flex justify-between"><dt style="color:#5A6684">Delivery</dt><dd>12h</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORK / PORTFOLIO ============ -->
+<section id="work" class="px-5 sm:px-8 py-20 sm:py-28 bg-white border-y border-ink/8">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-2xl">
+      <p class="fade-up text-[13px] font-semibold tracking-wide uppercase text-signal mb-3">Work</p>
+      <h2 class="fade-up font-display font-semibold text-3xl sm:text-4xl tracking-tight">What we build</h2>
+      <p class="fade-up mt-4" style="color:#5A6684">Concept builds showing the kind of site each business type gets. Replace with real client screenshots as projects go live.</p>
+    </div>
+
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article class="fade-up rounded-2xl border border-ink/8 overflow-hidden bg-paper hover:shadow-card transition-shadow">
+        <div class="browser-chrome"><span class="dot bg-[#F4A93C]"></span><span class="dot bg-[#2F6FED]"></span><span class="dot bg-ink/20"></span></div>
+        <div class="p-5 h-40 bg-gradient-to-br from-signal-50 to-white flex items-center justify-center">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="1.5" aria-hidden="true"><path d="M3 3h18v18H3z" opacity="0"/><path d="M4 17h16M4 12h10M4 7h16"/></svg>
+        </div>
+        <div class="p-5">
+          <span class="text-[11px] font-semibold uppercase tracking-wide text-marigold-600">Concept Project</span>
+          <h3 class="font-display font-semibold mt-1">Local restaurant</h3>
+          <p class="text-sm mt-1" style="color:#5A6684">1-page site: menu, hours, WhatsApp ordering, GBP link.</p>
+        </div>
+      </article>
+      <article class="fade-up rounded-2xl border border-ink/8 overflow-hidden bg-paper hover:shadow-card transition-shadow">
+        <div class="browser-chrome"><span class="dot bg-[#F4A93C]"></span><span class="dot bg-[#2F6FED]"></span><span class="dot bg-ink/20"></span></div>
+        <div class="p-5 h-40 bg-gradient-to-br from-[#FEF2E1] to-white flex items-center justify-center">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#DE8F1E" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        </div>
+        <div class="p-5">
+          <span class="text-[11px] font-semibold uppercase tracking-wide text-marigold-600">Concept Project</span>
+          <h3 class="font-display font-semibold mt-1">Salon &amp; spa</h3>
+          <p class="text-sm mt-1" style="color:#5A6684">5-page Pro build: services, price list, booking via WhatsApp.</p>
+        </div>
+      </article>
+      <article class="fade-up rounded-2xl border border-ink/8 overflow-hidden bg-paper hover:shadow-card transition-shadow">
+        <div class="browser-chrome"><span class="dot bg-[#F4A93C]"></span><span class="dot bg-[#2F6FED]"></span><span class="dot bg-ink/20"></span></div>
+        <div class="p-5 h-40 bg-gradient-to-br from-ink/5 to-white flex items-center justify-center">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#0B1220" stroke-width="1.5" aria-hidden="true"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg>
+        </div>
+        <div class="p-5">
+          <span class="text-[11px] font-semibold uppercase tracking-wide text-marigold-600">Concept Project</span>
+          <h3 class="font-display font-semibold mt-1">Neighbourhood shop</h3>
+          <p class="text-sm mt-1" style="color:#5A6684">1-page site with product catalog and GBP-linked directions.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT / WHY US ============ -->
+<section id="about" class="px-5 sm:px-8 py-20 sm:py-28">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16">
+    <div>
+      <p class="fade-up text-[13px] font-semibold tracking-wide uppercase text-signal mb-3">About us</p>
+      <h2 class="fade-up font-display font-semibold text-3xl sm:text-4xl tracking-tight">Built for local Indian businesses</h2>
+      <p class="fade-up mt-5" style="color:#3B475F">Bharat Webstudio helps local Indian businesses build a professional online presence without unnecessary monthly costs. We serve shops, restaurants, salons, clinics, coaching institutes, and service providers who already have a Google Business Profile but nothing to point customers to.</p>
+      <p class="fade-up mt-4" style="color:#3B475F">Every site is a static build hosted on GitHub Pages — fast, simple, and free to keep online — and connected directly to the business's Google listing. One-time pricing, no retainers.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-5">
+      <div class="fade-up">
+        <h3 class="font-semibold text-[15px]">Built for local businesses</h3>
+        <p class="text-sm mt-1.5" style="color:#5A6684">Not enterprise software, not complicated systems.</p>
+      </div>
+      <div class="fade-up">
+        <h3 class="font-semibold text-[15px]">Simple pricing</h3>
+        <p class="text-sm mt-1.5" style="color:#5A6684">One-time packages, transparent from the first message.</p>
+      </div>
+      <div class="fade-up">
+        <h3 class="font-semibold text-[15px]">Mobile-first</h3>
+        <p class="text-sm mt-1.5" style="color:#5A6684">Designed for customers browsing from their phones.</p>
+      </div>
+      <div class="fade-up">
+        <h3 class="font-semibold text-[15px]">Fast websites</h3>
+        <p class="text-sm mt-1.5" style="color:#5A6684">Lightweight static builds optimized for speed.</p>
+      </div>
+      <div class="fade-up">
+        <h3 class="font-semibold text-[15px]">Direct communication</h3>
+        <p class="text-sm mt-1.5" style="color:#5A6684">WhatsApp-first, built for how local owners actually talk to us.</p>
+      </div>
+      <div class="fade-up">
+        <h3 class="font-semibold text-[15px]">No unnecessary complexity</h3>
+        <p class="text-sm mt-1.5" style="color:#5A6684">Sites that focus on helping customers understand and contact you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GBP EXPLAINER ============ -->
+<section class="px-5 sm:px-8 py-20 sm:py-28 bg-ink text-white">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="fade-up font-display font-semibold text-3xl sm:text-4xl tracking-tight">Your Google Business Profile is the start. Your website completes it.</h2>
+    <div class="fade-up mt-12 flex flex-wrap items-center justify-center gap-3 text-sm font-medium">
+      <span class="px-4 py-2.5 rounded-full bg-white/10">Google Search</span>
+      <span class="text-white/30" aria-hidden="true">→</span>
+      <span class="px-4 py-2.5 rounded-full bg-white/10">Business Profile</span>
+      <span class="text-white/30" aria-hidden="true">→</span>
+      <span class="px-4 py-2.5 rounded-full bg-signal">Website</span>
+      <span class="text-white/30" aria-hidden="true">→</span>
+      <span class="px-4 py-2.5 rounded-full bg-white/10">Services</span>
+      <span class="text-white/30" aria-hidden="true">→</span>
+      <span class="px-4 py-2.5 rounded-full bg-marigold text-ink">Customer</span>
+    </div>
+    <p class="fade-up mt-8 text-white/50 text-xs">Bharat Webstudio is an independent service and is not affiliated with, endorsed by, or sponsored by Google. Google Business Profile is a trademark of Google LLC.</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="px-5 sm:px-8 py-20 sm:py-28">
+  <div class="max-w-3xl mx-auto">
+    <p class="fade-up text-[13px] font-semibold tracking-wide uppercase text-signal mb-3 text-center">FAQ</p>
+    <h2 class="fade-up font-display font-semibold text-3xl sm:text-4xl tracking-tight text-center">Common questions</h2>
+
+    <div id="faq-list" class="mt-12 divide-y divide-ink/8 border-y border-ink/8">
+      <!-- items injected via template below for brevity in markup -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="px-5 sm:px-8 py-20 sm:py-28 bg-white border-t border-ink/8">
+  <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14">
+    <div>
+      <p class="fade-up text-[13px] font-semibold tracking-wide uppercase text-signal mb-3">Contact</p>
+      <h2 class="fade-up font-display font-semibold text-3xl sm:text-4xl tracking-tight">Ready to get your business online?</h2>
+      <p class="fade-up mt-4" style="color:#5A6684">Message us your business details and we'll reply with next steps — usually within an hour.</p>
+
+      <div class="fade-up mt-8 flex flex-wrap gap-3">
+        <a href="https://wa.me/917479521662?text=Hi!%20I%20want%20a%20professional%20website%20for%20my%20business.%20Please%20share%20the%20available%20packages." target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-[#25C55E] text-white font-semibold hover:bg-[#1FAE50] transition-colors">
+          WhatsApp Now
+        </a>
+        <a href="mailto:bharatwebstudioproject@gmail.com?subject=Website%20enquiry&body=Hi%2C%20I%20need%20a%20website%20for%20my%20business." class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border-2 border-ink/15 hover:border-ink/35 font-semibold transition-colors">
+          Email Us
+        </a>
+      </div>
+
+      <dl class="fade-up mt-10 space-y-3 text-sm">
+        <div class="flex gap-2"><dt class="font-medium w-24" style="color:#8A93A8">WhatsApp</dt><dd><a class="hover:text-signal" href="https://wa.me/917479521662">+91 74795 21662</a></dd></div>
+        <div class="flex gap-2"><dt class="font-medium w-24" style="color:#8A93A8">Email</dt><dd><a class="hover:text-signal" href="mailto:bharatwebstudioproject@gmail.com">bharatwebstudioproject@gmail.com</a></dd></div>
+      </dl>
+    </div>
+
+    <form id="contact-form" class="fade-up bg-paper border border-ink/8 rounded-2xl p-7 space-y-4" novalidate>
+      <p class="text-xs px-3 py-2 rounded-lg bg-signal-50 text-signal-600">This form isn't wired to a backend — submitting opens a pre-filled WhatsApp message so we get it instantly.</p>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label for="f-name" class="text-sm font-medium">Name *</label>
+          <input id="f-name" name="name" required class="mt-1.5 w-full rounded-lg border border-ink/15 px-3.5 py-2.5 text-sm bg-white" />
+          <p class="err text-xs text-red-600 mt-1 hidden">Please enter your name.</p>
+        </div>
+        <div>
+          <label for="f-business" class="text-sm font-medium">Business name *</label>
+          <input id="f-business" name="business" required class="mt-1.5 w-full rounded-lg border border-ink/15 px-3.5 py-2.5 text-sm bg-white" />
+          <p class="err text-xs text-red-600 mt-1 hidden">Please enter your business name.</p>
+        </div>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label for="f-category" class="text-sm font-medium">Business category</label>
+          <input id="f-category" name="category" placeholder="e.g. Salon, Restaurant" class="mt-1.5 w-full rounded-lg border border-ink/15 px-3.5 py-2.5 text-sm bg-white" />
+        </div>
+        <div>
+          <label for="f-phone" class="text-sm font-medium">Phone / WhatsApp *</label>
+          <input id="f-phone" name="phone" required class="mt-1.5 w-full rounded-lg border border-ink/15 px-3.5 py-2.5 text-sm bg-white" />
+          <p class="err text-xs text-red-600 mt-1 hidden">Please enter a phone number.</p>
+        </div>
+      </div>
+      <div>
+        <label for="f-email" class="text-sm font-medium">Email</label>
+        <input id="f-email" name="email" type="email" class="mt-1.5 w-full rounded-lg border border-ink/15 px-3.5 py-2.5 text-sm bg-white" />
+      </div>
+      <div>
+        <label for="f-gbp" class="text-sm font-medium">Existing Google Business Profile URL</label>
+        <input id="f-gbp" name="gbp" class="mt-1.5 w-full rounded-lg border border-ink/15 px-3.5 py-2.5 text-sm bg-white" />
+      </div>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label for="f-status" class="text-sm font-medium">Website status</label>
+          <select id="f-status" name="status" class="mt-1.5 w-full rounded-lg border border-ink/15 px-3.5 py-2.5 text-sm bg-white">
+            <option>No website yet</option>
+            <option>Have an outdated website</option>
+            <option>Not sure</option>
+          </select>
+        </div>
+        <div>
+          <label for="f-package" class="text-sm font-medium">Package interested in</label>
+          <select id="f-package" name="package" class="mt-1.5 w-full rounded-lg border border-ink/15 px-3.5 py-2.5 text-sm bg-white">
+            <option>Normal ₹5,000</option>
+            <option>Pro ₹10,000</option>
+            <option>Maintenance</option>
+            <option>Not sure</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label for="f-message" class="text-sm font-medium">Message</label>
+        <textarea id="f-message" name="message" rows="3" class="mt-1.5 w-full rounded-lg border border-ink/15 px-3.5 py-2.5 text-sm bg-white"></textarea>
+      </div>
+      <button type="submit" class="w-full py-3.5 rounded-full bg-ink text-white font-semibold hover:bg-ink-700 transition-colors">Send via WhatsApp</button>
+      <p id="form-success" class="hidden text-sm text-[#128C4A] font-medium">Opening WhatsApp with your details filled in…</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-ink text-white/70 px-5 sm:px-8 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <p class="font-display font-semibold text-lg text-white">Bharat Webstudio</p>
+      <p class="text-sm mt-3 max-w-xs">Professional websites for local businesses, connected to Google Business Profile. One-time pricing, no monthly fees.</p>
+    </div>
+    <div>
+      <p class="text-xs font-semibold uppercase tracking-wide text-white/40 mb-4">Navigate</p>
+      <ul class="space-y-2.5 text-sm">
+        <li><a href="#home" class="hover:text-white">Home</a></li>
+        <li><a href="#services" class="hover:text-white">Services</a></li>
+        <li><a href="#pricing" class="hover:text-white">Pricing</a></li>
+        <li><a href="#work" class="hover:text-white">Work</a></li>
+        <li><a href="#about" class="hover:text-white">About</a></li>
+        <li><a href="#faq" class="hover:text-white">FAQ</a></li>
+        <li><a href="#contact" class="hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-xs font-semibold uppercase tracking-wide text-white/40 mb-4">Company</p>
+      <ul class="space-y-2.5 text-sm">
+        <li><a href="#about" class="hover:text-white">About</a></li>
+        <li><a href="#" class="hover:text-white">Success stories</a></li>
+        <li><a href="#" class="hover:text-white">Partner</a></li>
+        <li><a href="#" class="hover:text-white">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-xs font-semibold uppercase tracking-wide text-white/40 mb-4">Contact</p>
+      <ul class="space-y-2.5 text-sm">
+        <li><a href="mailto:bharatwebstudioproject@gmail.com" class="hover:text-white">bharatwebstudioproject@gmail.com</a></li>
+        <li><a href="https://wa.me/917479521662" class="hover:text-white">+91 74795 21662</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row gap-4 justify-between text-xs text-white/40">
+    <p>© 2026 Bharat Webstudio. All rights reserved. Google Business Profile is a trademark of Google LLC. Bharat Webstudio is not affiliated with Google.</p>
+    <div class="flex gap-5">
+      <a href="#" class="hover:text-white/70">Privacy Policy</a>
+      <a href="#" class="hover:text-white/70">Terms</a>
+      <a href="#" class="hover:text-white/70">Disclaimer</a>
     </div>
   </div>
 </footer>
 
-<!-- ===== SIMPLE MOBILE HAMBURGER TOGGLE ===== -->
+<!-- Mobile sticky WhatsApp -->
+<a href="https://wa.me/917479521662?text=Hi!%20I%20want%20a%20professional%20website%20for%20my%20business.%20Please%20share%20the%20available%20packages." target="_blank" rel="noopener"
+   class="whatsapp-fab lg:hidden fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full bg-[#25C55E] flex items-center justify-center shadow-2xl" aria-label="Chat on WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.83 14.02c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.11.11-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.86-4.29-.14-.19-1.17-1.55-1.17-2.96 0-1.4.74-2.09 1-2.38.26-.28.57-.35.76-.35h.55c.18 0 .41-.03.64.49.24.55.81 1.9.88 2.04.07.15.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.75 1.24 1.62 2 1.11 1 2.05 1.31 2.34 1.46.29.15.46.13.63-.05.17-.19.72-.83.91-1.11.19-.29.38-.24.63-.15.26.1 1.61.76 1.89.9.28.14.46.21.53.33.07.12.07.68-.17 1.36Z"/></svg>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script>
-  const hamburger = document.getElementById('hamburger-icon');
-  const navLinks = document.getElementById('navLinks');
+document.addEventListener('DOMContentLoaded', () => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  hamburger.addEventListener('click', function() {
-    navLinks.classList.toggle('active');
-  });
+  /* ---------- Header scroll state ---------- */
+  const header = document.getElementById('site-header');
+  const headerInner = document.getElementById('header-inner');
+  const onScroll = () => {
+    const scrolled = window.scrollY > 12;
+    header.dataset.scrolled = scrolled;
+    header.classList.toggle('bg-paper/90', scrolled);
+    header.classList.toggle('backdrop-blur-md', scrolled);
+    header.classList.toggle('shadow-sm', scrolled);
+    headerInner.classList.toggle('h-[58px]', scrolled);
+  };
+  document.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 
-  // smooth anchor
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if(target) target.scrollIntoView({ behavior: 'smooth' });
-      if (window.innerWidth <= 768) {
-        navLinks.classList.remove('active');
-      }
+  /* ---------- Mobile menu ---------- */
+  const menu = document.getElementById('mobile-menu');
+  const overlay = document.getElementById('menu-overlay');
+  const toggleBtn = document.getElementById('menu-toggle');
+  const closeBtn = document.getElementById('menu-close');
+  function openMenu() {
+    menu.classList.add('open'); menu.setAttribute('aria-hidden', 'false');
+    overlay.classList.remove('opacity-0', 'pointer-events-none');
+    toggleBtn.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenu() {
+    menu.classList.remove('open'); menu.setAttribute('aria-hidden', 'true');
+    overlay.classList.add('opacity-0', 'pointer-events-none');
+    toggleBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+  toggleBtn.addEventListener('click', openMenu);
+  closeBtn.addEventListener('click', closeMenu);
+  overlay.addEventListener('click', closeMenu);
+  document.querySelectorAll('.mobile-link').forEach(a => a.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+  /* ---------- FAQ data + render ---------- */
+  const faqs = [
+    ['What does the ₹5,000 package include?', 'A 1-page professional website, mobile optimization, Google Business Profile setup/verify assistance, GitHub Pages hosting, and a link between your site and your GBP listing. Target delivery is 24 hours.'],
+    ['What is included in the Pro package?', 'Everything in Normal, plus a 5-page website, local SEO optimization, 3 Google Business Profile posts, citation/listing support, 12h priority delivery, and 6 months of minor edits.'],
+    ['Do I need to buy hosting?', 'No. Every package includes GitHub Pages hosting, which has ₹0 recurring cost.'],
+    ['Where is my website hosted?', 'On GitHub Pages, a free static hosting service. It\'s fast and reliable for the kind of business site we build.'],
+    ['Do I need a domain?', 'No — your site works on a free GitHub Pages address. A custom domain is optional and can be connected if you already own one.'],
+    ['Can I use my own domain?', 'Yes, if you already own a domain we can point it to your website. Domain purchase itself is not included in the package price.'],
+    ['Can you connect my website to my Google Business Profile?', 'Yes — we add your website link to your GBP listing as part of every package.'],
+    ['Can I request changes later?', 'Yes, through the Maintenance plan at ₹500 per change, or a custom package for frequent updates. Pro includes 6 months of minor edits.'],
+    ['How does maintenance work?', 'Message us the change you need on WhatsApp. We quote it (₹500 for most minor edits) and update your live site.'],
+    ['How quickly can the website be delivered?', 'Normal targets 24 hours, Pro targets 12 hours, from the time we have your business details.'],
+    ['Do you guarantee Google rankings?', 'No. We optimize your site and GBP for local search, but we don\'t guarantee specific rankings — no agency honestly can.'],
+    ['Do you provide SEO?', 'Yes, on-page local SEO is included with Pro and basic SEO structure is included with Normal.'],
+    ['Can you build websites for any type of local business?', 'Yes — shops, restaurants, salons, clinics, coaching institutes, repair and home-service businesses, and other local professionals.'],
+    ['Can I upgrade from Normal to Pro?', 'Yes, message us on WhatsApp and we\'ll quote the difference to upgrade your existing site.'],
+    ['What information do I need to provide?', 'Your business name, category, services, contact details, a few photos, and your existing Google Business Profile link if you have one.'],
+  ];
+  const faqList = document.getElementById('faq-list');
+  faqs.forEach(([q, a], i) => {
+    const item = document.createElement('div');
+    item.className = 'faq-item py-1';
+    item.innerHTML = `
+      <button class="faq-trigger w-full flex items-center justify-between gap-4 py-5 text-left" aria-expanded="false" id="faq-btn-${i}" aria-controls="faq-panel-${i}">
+        <span class="font-medium text-[15px]">${q}</span>
+        <span class="faq-icon flex-shrink-0 w-6 h-6 flex items-center justify-center text-signal" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </span>
+      </button>
+      <div class="faq-answer" id="faq-panel-${i}" role="region" aria-labelledby="faq-btn-${i}">
+        <p class="pb-5 text-sm pr-8" style="color:#5A6684">${a}</p>
+      </div>`;
+    faqList.appendChild(item);
+    const btn = item.querySelector('.faq-trigger');
+    btn.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(el => { el.classList.remove('open'); el.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false'); });
+      if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
     });
   });
-</script>
 
-<!-- note: all functions working - whatsapp, email, rupee pricing, github hosting message, permanent website -->
+  /* ---------- Contact form -> WhatsApp ---------- */
+  const form = document.getElementById('contact-form');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let valid = true;
+    ['f-name', 'f-business', 'f-phone'].forEach(id => {
+      const input = document.getElementById(id);
+      const err = input.parentElement.querySelector('.err');
+      if (!input.value.trim()) { err.classList.remove('hidden'); input.classList.add('border-red-400'); valid = false; }
+      else { err.classList.add('hidden'); input.classList.remove('border-red-400'); }
+    });
+    if (!valid) return;
+
+    const v = id => document.getElementById(id).value.trim();
+    const msg = [
+      `Hi, I want a website for my business.`,
+      `Name: ${v('f-name')}`,
+      `Business: ${v('f-business')}`,
+      v('f-category') ? `Category: ${v('f-category')}` : null,
+      `Phone: ${v('f-phone')}`,
+      v('f-email') ? `Email: ${v('f-email')}` : null,
+      v('f-gbp') ? `GBP link: ${v('f-gbp')}` : null,
+      `Status: ${v('f-status')}`,
+      `Package: ${v('f-package')}`,
+      v('f-message') ? `Message: ${v('f-message')}` : null,
+    ].filter(Boolean).join('\n');
+
+    document.getElementById('form-success').classList.remove('hidden');
+    window.open(`https://wa.me/917479521662?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+  });
+
+  /* ---------- GSAP animations ---------- */
+  if (window.gsap) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    if (!reduceMotion) {
+      gsap.timeline({ defaults: { ease: 'power3.out' } })
+        .to('#home .fade-up', { opacity: 1, y: 0, duration: 0.7, stagger: 0.08 })
+        .to('#hero-visual', { opacity: 1, y: 0, duration: 0.8 }, 0.15);
+
+      gsap.utils.toArray('section .fade-up').forEach(el => {
+        if (el.closest('#home')) return;
+        gsap.to(el, {
+          opacity: 1, y: 0, duration: 0.6, ease: 'power3.out',
+          scrollTrigger: { trigger: el, start: 'top 88%' },
+        });
+      });
+
+      document.getElementById('route-line-1');
+    } else {
+      gsap.set('.fade-up', { opacity: 1, y: 0 });
+    }
+  } else {
+    document.querySelectorAll('.fade-up').forEach(el => { el.style.opacity = 1; el.style.transform = 'none'; });
+  }
+});
+</script>
 </body>
 </html>
